@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      MontrealDaily
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,97 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">MontrealDaily</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Weather</ion-card-title>
+      <ion-card-subtitle>Last updated : {{ lastUpdated }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-grid>
+        <ion-row style="text-align: center;">
+          <ion-col>
+            <p style="font-size: 30px;">{{ temp }}°C</p>
+          </ion-col>
+          <ion-col>
+            <p style="color: yellow; font-size: 30px;"><ion-icon name="sunny-outline"></ion-icon></p>
+          </ion-col>
+        </ion-row>
+        <div class="hr"> </div>
+        <ion-row>
+          <ion-col>
+            <p style="text-align: center;">Feels like {{ tempFeels }}°C</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p style="text-align: center;">☴ 5km/h</p>
+          </ion-col>
+        </ion-row>
+        <div class="hr2"> </div>
+        <ion-row>
+          <ion-col style="text-align: center;" class="hov">
+            <p style="padding-bottom: 15px; font-size: 15px;"><b>Morning</b></p>
+            <span class="inline">
+              <p id="text"><ion-icon class="icon" name="sunny-outline"></ion-icon> 19°C</p>
+            </span>
+            <p class="icon">☴ 5km/h</p>
+          </ion-col>
+          <ion-col style="text-align: center;" class="hov">
+            <p style="padding-bottom: 15px; font-size: 15px;"><b>Afternoon</b></p>
+            <span class="inline">
+              <p id="text"><ion-icon class="icon" name="sunny-outline"></ion-icon> 19°C</p>
+            </span>
+            <p class="icon">☴ 5km/h</p>
+          </ion-col>
+          <ion-col style="text-align: center;" class="hov">
+            <p style="padding-bottom: 15px; font-size: 15px;"><b>Evening</b></p>
+            <span class="inline">
+              <p id="text"><ion-icon class="icon" name="sunny-outline"></ion-icon> 19°C</p>
+            </span>
+            <p class="icon">☴ 5km/h</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <hr />
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Transports</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Actualités</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Actualités</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
