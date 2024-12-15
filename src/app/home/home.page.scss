@@ -25,3 +25,33 @@
 #container a {
   text-decoration: none;
 }
+
+.hr {
+  width:100px; 
+  margin: auto;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #cccccc78;
+  width: 80%;
+}
+
+.hr2 {
+  width:100px; 
+  margin: auto;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #cccccc;
+  width: 100%;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.hov:hover {
+  transition: color 0.2s ease-in-out;
+  color: #504099;
+}
